@@ -42,3 +42,10 @@ export function delPlan(id) {
     method: 'delete'
   })
 }
+//查询所有护理计划
+export function getAllNursingPlans() {
+  return request({
+    url: '/nursing/plan/all',
+    method: 'get'
+  })
+}
